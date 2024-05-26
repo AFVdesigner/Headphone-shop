@@ -55,3 +55,26 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+// ============= scroll Reveal Animation =============
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2500,
+    delay:400
+})
+sr.reveal(`.home_header,.section_title`,{delay:600})
+sr.reveal(`.home_footer`,{delay:700})
+sr.reveal(`.home_img`,{delay:900 , origin:'top'})
+
+sr.reveal(`.sponsor_img`,{ origin:'top', interval:100})
+sr.reveal(`.specs_data`,{ origin:'left', interval:100})
+sr.reveal(`.specs_img`,{ origin:'right'})
+
+sr.reveal(`.case_data,.discount_animate`,{ origin:'left'})
+sr.reveal(`.case_img,.discount_img`,{ origin:'right'})
+
+sr.reveal(`.products_card`,{ origin:'top', interval:100 })
+sr.reveal(`.products_img`,{ origin:'bottom', interval:100,delay:1000 })
+
+
+
+
